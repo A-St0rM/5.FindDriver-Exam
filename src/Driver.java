@@ -9,7 +9,4 @@ public class Driver {
         this.districtCoverage = destinationCoverage;
     }
 
-    public String getName() {
-        return name;
-    }
 }

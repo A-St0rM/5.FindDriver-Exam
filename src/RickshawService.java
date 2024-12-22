@@ -42,11 +42,13 @@ public class RickshawService {
         for (Driver d : drivers) {
             for(int i = 0; i < d.districtCoverage.length; i++) {
                 if (d.districtCoverage[i] == districtNumber) {
-                    return "Found an available driver," + " Name: " + d.getName();
+                    if(!d.isBooked) {
+                        d.isBooked = true;
+                        return "Found an available driver," + " Name: " + d.name;
+                    }
                 }
             }
         }
         return "No driver found with this district number";
     }
-
 }
