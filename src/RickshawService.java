@@ -9,7 +9,6 @@ public class RickshawService {
     public void createDriver(String name, int[] destinationCoverage) {
         Driver driver = new Driver(name, destinationCoverage);
         drivers.add(driver);
-
     }
 
     public void bookDriver() {
@@ -30,7 +29,7 @@ public class RickshawService {
             System.out.println("You have chosen " + destinations[districtIndex][destinationIndex]);
         } else {
             System.out.println("Invalid input, try again");
-            bookDriver();
+            bookDriver(); //TODO whileLoop
         }
 
         String checkIfDriverIsAvailable = findDriver(districtIndex + 1);

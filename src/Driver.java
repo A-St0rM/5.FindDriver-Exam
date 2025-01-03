@@ -1,7 +1,7 @@
 public class Driver {
 
     public String name;
-    public boolean isBooked; //TODO isBooked
+    public boolean isBooked;
     public int[] districtCoverage;
 
     public Driver(String name, int[] destinationCoverage){
