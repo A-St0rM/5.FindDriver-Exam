@@ -41,7 +41,6 @@ public class RickshawService {
     }
 
 
-
     private String findDriver(int districtNumber) {
         for (Driver d : drivers) {
             for(int i = 0; i < d.districtCoverage.length; i++) {

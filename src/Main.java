@@ -2,11 +2,11 @@ public class Main {
     public static void main(String[] args) {
         RickshawService r = new RickshawService();
 
-        int[] districtsCoverage = new int[]{1, 2};
-        int[] districtsCoverage2 = new int[]{2, 3};
+        int[] districtCoverage = new int[]{1, 2};
+        int[] districtCoverage2 = new int[]{2, 3};
 
-        r.createDriver("Pete",districtsCoverage);
-        r.createDriver("David",districtsCoverage2);
+        r.createDriver("Pete",districtCoverage);
+        r.createDriver("David",districtCoverage2);
 
         r.bookDriver();
     }
